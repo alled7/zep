@@ -41,10 +41,6 @@ services:
     depends_on:
       - db
       - nlp
-        db:
-          condition: service_healthy
-        nlp:
-          condition: service_healthy
     ports:
         - "8000:8000"
     volumes:
